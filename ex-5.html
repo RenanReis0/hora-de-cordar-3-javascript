@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var numero1 = parseInt(prompt("Digite o primeiro número: "))
+        var numero2 = parseInt(prompt("Digite o segundo número: "))
+        var somaEntre = 0
+        var soma = numero1 + numero2
+        var media = 0
+        var mediaEntre = 0
+        var vezes = 0
+
+        for(numero1;numero1<=numero2;numero1++){
+            somaEntre += numero1
+            vezes ++
+        }
+        media = soma / 2
+        mediaEntre = somaEntre / vezes
+
+        document.write("A média dos dois números é: ",media,".<br>")
+        document.write("A média entre todos os números entre os números digitados é: ",mediaEntre,".")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

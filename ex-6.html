@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i = 1
+
+        var aprovados = 0
+
+        while(i>0){
+            var numero1 = parseFloat(prompt("Digite a primeira nota: "))
+            var numero2 = parseFloat(prompt("Digite a segunda nota: "))
+            media = (numero1 + numero2) / 2
+            i--
+            if(media>10){
+                i++
+                alert("Tente Novamente")
+            }else{
+                if(media>= 9.5){
+                aprovados ++
+                calcularNovamente = prompt("Calcular a média de outro aluno: Sim/Não?")
+                if (calcularNovamente == "Sim" || calcularNovamente == "SIM" || calcularNovamente == "S") {
+                    i++
+                } else{
+                    document.write("Quantidade de alunos aprovados: ",aprovados,".")
+                }
+            } else{
+                calcularNovamente = prompt("Calcular a média de outro aluno: Sim/Não?")
+                if (calcularNovamente == "Sim" || calcularNovamente == "SIM" || calcularNovamente == "S") {
+                    i++
+                } else{
+                    document.write("Quantidade de alunos aprovados: ",aprovados,".")
+                }
+            }
+            }
+
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
